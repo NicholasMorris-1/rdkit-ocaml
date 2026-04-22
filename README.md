@@ -1,4 +1,4 @@
-#RDKit-OCaml 
+# RDKit-OCaml
 
 This project provides an interface to use RDkit inside OCaml. RDKit is a cheminformatics library implemented in C++. There are Python, Java and JavaScript bindings available, but it would be useful to take advantage of some OCaml features such as GADTs for cheminformatics work.
 The RDKit library now has an API that exposes some of its most common functionality in a C wrapper [C Wrapper](https://greglandrum.github.io/rdkit-blog/posts/2021-05-01-rdkit-cffi-part1.html). 
@@ -9,7 +9,7 @@ Using this approach we can only use the functions in minimimallib, and if we wan
 
 In the main file we have a minimal example of generating a canonical smiles string. But I still need to write a full test suite for the functions. 
 
-**Building the project** 
+## Building the project   
 
 This project relies on a compiled from source RDkit (which I have included as a git submodule). I would recommend using nix and the provided nix-shell to manage dependencies. 
 

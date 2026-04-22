@@ -42,6 +42,5 @@ pkgs.mkShell {
   shellHook = ''
     export RDBASE=$PWD
     echo "RDKit build environment ready"
-    echo "Run: mkdir build && cd build && cmake .."
   '';
 }

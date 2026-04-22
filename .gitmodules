@@ -1,3 +1,6 @@
 [submodule "rdkit"]
 	path = rdkit
 	url = git@github.com:rdkit/rdkit.git
+[submodule "vendor/rdkit"]
+	path = vendor/rdkit
+	url = https://github.com/rdkit/rdkit.git

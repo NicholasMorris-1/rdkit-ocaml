@@ -1,11 +1,11 @@
 # RDKit-OCaml
 
 This project provides an interface to use RDkit inside OCaml. RDKit is a cheminformatics library implemented in C++. There are Python, Java and JavaScript bindings available, but it would be useful to take advantage of some OCaml features such as GADTs for cheminformatics work.
-The RDKit library now has an API that exposes some of its most common functionality in a C wrapper [C Wrapper](https://greglandrum.github.io/rdkit-blog/posts/2021-05-01-rdkit-cffi-part1.html). 
+The RDKit library now has an API that exposes some of its most common functionality in a [C Wrapper](https://greglandrum.github.io/rdkit-blog/posts/2021-05-01-rdkit-cffi-part1.html). 
 
 Here we use [ctypes](https://opam.ocaml.org/packages/ctypes/), to call the exposed C functions, the heavy lifting is done in /lib/cffi.ml. 
 
-Using this approach we can only use the functions in minimimallib, and if we wanted to extend to the full RDKit functionality we would require a new approach. It should be possible to run the rest through SWIG and someone more knowledgeable than me in C would be able to clean the generated C layer. 
+Using this approach we can only use the functions in minimimallib, and if we wanted to extend to the full RDKit functionality, we would require a new approach. It should be possible to run the rest through SWIG and someone more knowledgeable than me in C would be able to clean the generated C layer. 
 
 In the main file we have a minimal example of generating a canonical smiles string. But I still need to write a full test suite for the functions. 
 
@@ -13,7 +13,7 @@ In the main file we have a minimal example of generating a canonical smiles stri
 
 This project relies on a compiled from source RDkit (which I have included as a git submodule). I would recommend using nix and the provided nix-shell to manage dependencies. 
 
-Simply install [Nix](https://nixos.org/download/) if you havent already, then run form the root directory #
+Simply install [Nix](https://nixos.org/download/) if you haven't  already, then run form the root directory 
 
 `nix-shell` 
 

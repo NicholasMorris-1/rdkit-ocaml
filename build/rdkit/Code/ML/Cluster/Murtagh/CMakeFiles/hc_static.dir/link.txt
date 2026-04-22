@@ -1,0 +1,2 @@
+/nix/store/hb2bs5fg5wkm04x565737qd5nh2hy5nk-gcc-wrapper-15.2.0/bin/ar qc libRDKithc_static.a CMakeFiles/hc_static.dir/hc.c.o CMakeFiles/hc_static.dir/hcdriver.c.o
+/nix/store/hb2bs5fg5wkm04x565737qd5nh2hy5nk-gcc-wrapper-15.2.0/bin/ranlib libRDKithc_static.a

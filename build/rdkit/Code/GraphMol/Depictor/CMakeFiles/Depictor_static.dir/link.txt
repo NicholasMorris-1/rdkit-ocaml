@@ -1,0 +1,2 @@
+/nix/store/hb2bs5fg5wkm04x565737qd5nh2hy5nk-gcc-wrapper-15.2.0/bin/ar qc libRDKitDepictor_static.a CMakeFiles/Depictor_static.dir/RDDepictor.cpp.o CMakeFiles/Depictor_static.dir/EmbeddedFrag.cpp.o CMakeFiles/Depictor_static.dir/DepictUtils.cpp.o CMakeFiles/Depictor_static.dir/Templates.cpp.o
+/nix/store/hb2bs5fg5wkm04x565737qd5nh2hy5nk-gcc-wrapper-15.2.0/bin/ranlib libRDKitDepictor_static.a

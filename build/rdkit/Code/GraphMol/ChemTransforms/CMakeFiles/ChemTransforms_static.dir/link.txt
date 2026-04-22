@@ -1,0 +1,2 @@
+/nix/store/hb2bs5fg5wkm04x565737qd5nh2hy5nk-gcc-wrapper-15.2.0/bin/ar qc libRDKitChemTransforms_static.a CMakeFiles/ChemTransforms_static.dir/ChemTransforms.cpp.o CMakeFiles/ChemTransforms_static.dir/MolFragmenter.cpp.o CMakeFiles/ChemTransforms_static.dir/MolFragmenterJSONParser.cpp.o CMakeFiles/ChemTransforms_static.dir/MolZip.cpp.o
+/nix/store/hb2bs5fg5wkm04x565737qd5nh2hy5nk-gcc-wrapper-15.2.0/bin/ranlib libRDKitChemTransforms_static.a

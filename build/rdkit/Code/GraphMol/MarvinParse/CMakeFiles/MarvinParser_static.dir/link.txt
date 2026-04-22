@@ -1,0 +1,2 @@
+/nix/store/hb2bs5fg5wkm04x565737qd5nh2hy5nk-gcc-wrapper-15.2.0/bin/ar qc libRDKitMarvinParser_static.a CMakeFiles/MarvinParser_static.dir/MarvinParser.cpp.o CMakeFiles/MarvinParser_static.dir/MarvinWriter.cpp.o CMakeFiles/MarvinParser_static.dir/MarvinDefs.cpp.o
+/nix/store/hb2bs5fg5wkm04x565737qd5nh2hy5nk-gcc-wrapper-15.2.0/bin/ranlib libRDKitMarvinParser_static.a

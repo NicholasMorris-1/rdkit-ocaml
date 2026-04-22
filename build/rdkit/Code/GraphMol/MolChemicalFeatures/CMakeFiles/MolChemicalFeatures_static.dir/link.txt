@@ -1,0 +1,2 @@
+/nix/store/hb2bs5fg5wkm04x565737qd5nh2hy5nk-gcc-wrapper-15.2.0/bin/ar qc libRDKitMolChemicalFeatures_static.a CMakeFiles/MolChemicalFeatures_static.dir/MolChemicalFeature.cpp.o CMakeFiles/MolChemicalFeatures_static.dir/MolChemicalFeatureDef.cpp.o CMakeFiles/MolChemicalFeatures_static.dir/MolChemicalFeatureFactory.cpp.o CMakeFiles/MolChemicalFeatures_static.dir/FeatureParser.cpp.o
+/nix/store/hb2bs5fg5wkm04x565737qd5nh2hy5nk-gcc-wrapper-15.2.0/bin/ranlib libRDKitMolChemicalFeatures_static.a

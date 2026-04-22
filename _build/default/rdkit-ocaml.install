@@ -1,0 +1,8 @@
+lib: [
+  "_build/install/default/lib/rdkit-ocaml/META"
+  "_build/install/default/lib/rdkit-ocaml/dune-package"
+  "_build/install/default/lib/rdkit-ocaml/opam"
+]
+bin: [
+  "_build/install/default/bin/rdkit-ocaml"
+]

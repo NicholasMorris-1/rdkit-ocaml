@@ -1,0 +1,2 @@
+/nix/store/hb2bs5fg5wkm04x565737qd5nh2hy5nk-gcc-wrapper-15.2.0/bin/ar qc libRDKitSubstructMatch_static.a CMakeFiles/SubstructMatch_static.dir/SubstructMatch.cpp.o CMakeFiles/SubstructMatch_static.dir/SubstructUtils.cpp.o
+/nix/store/hb2bs5fg5wkm04x565737qd5nh2hy5nk-gcc-wrapper-15.2.0/bin/ranlib libRDKitSubstructMatch_static.a

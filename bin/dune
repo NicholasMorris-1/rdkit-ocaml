@@ -1,4 +1,4 @@
 (executable
  (public_name rdkit-ocaml)
  (name main)
- (libraries rdkit_ocaml))
+ (libraries rdkit_ocaml ctypes ctypes-foreign))

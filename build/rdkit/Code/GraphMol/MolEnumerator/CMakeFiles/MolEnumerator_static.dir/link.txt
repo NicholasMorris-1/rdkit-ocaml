@@ -1,0 +1,2 @@
+/nix/store/hb2bs5fg5wkm04x565737qd5nh2hy5nk-gcc-wrapper-15.2.0/bin/ar qc libRDKitMolEnumerator_static.a CMakeFiles/MolEnumerator_static.dir/MolEnumerator.cpp.o CMakeFiles/MolEnumerator_static.dir/PositionVariation.cpp.o CMakeFiles/MolEnumerator_static.dir/LinkNode.cpp.o CMakeFiles/MolEnumerator_static.dir/RepeatUnit.cpp.o
+/nix/store/hb2bs5fg5wkm04x565737qd5nh2hy5nk-gcc-wrapper-15.2.0/bin/ranlib libRDKitMolEnumerator_static.a

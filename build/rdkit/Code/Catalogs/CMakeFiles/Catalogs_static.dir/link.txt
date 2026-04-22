@@ -1,0 +1,2 @@
+/nix/store/hb2bs5fg5wkm04x565737qd5nh2hy5nk-gcc-wrapper-15.2.0/bin/ar qc libRDKitCatalogs_static.a CMakeFiles/Catalogs_static.dir/Catalog.cpp.o CMakeFiles/Catalogs_static.dir/CatalogParams.cpp.o CMakeFiles/Catalogs_static.dir/CatalogEntry.cpp.o
+/nix/store/hb2bs5fg5wkm04x565737qd5nh2hy5nk-gcc-wrapper-15.2.0/bin/ranlib libRDKitCatalogs_static.a

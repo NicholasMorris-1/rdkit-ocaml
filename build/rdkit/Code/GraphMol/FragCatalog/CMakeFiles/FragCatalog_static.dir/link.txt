@@ -1,0 +1,2 @@
+/nix/store/hb2bs5fg5wkm04x565737qd5nh2hy5nk-gcc-wrapper-15.2.0/bin/ar qc libRDKitFragCatalog_static.a CMakeFiles/FragCatalog_static.dir/FragCatalogUtils.cpp.o CMakeFiles/FragCatalog_static.dir/FragCatGenerator.cpp.o CMakeFiles/FragCatalog_static.dir/FragCatalogEntry.cpp.o CMakeFiles/FragCatalog_static.dir/FragCatParams.cpp.o CMakeFiles/FragCatalog_static.dir/FragFPGenerator.cpp.o
+/nix/store/hb2bs5fg5wkm04x565737qd5nh2hy5nk-gcc-wrapper-15.2.0/bin/ranlib libRDKitFragCatalog_static.a

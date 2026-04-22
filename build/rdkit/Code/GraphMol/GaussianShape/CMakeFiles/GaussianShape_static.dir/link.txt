@@ -1,0 +1,2 @@
+/nix/store/hb2bs5fg5wkm04x565737qd5nh2hy5nk-gcc-wrapper-15.2.0/bin/ar qc libRDKitGaussianShape_static.a CMakeFiles/GaussianShape_static.dir/GaussianShape.cpp.o CMakeFiles/GaussianShape_static.dir/ShapeInput.cpp.o CMakeFiles/GaussianShape_static.dir/SingleConformerAlignment.cpp.o
+/nix/store/hb2bs5fg5wkm04x565737qd5nh2hy5nk-gcc-wrapper-15.2.0/bin/ranlib libRDKitGaussianShape_static.a

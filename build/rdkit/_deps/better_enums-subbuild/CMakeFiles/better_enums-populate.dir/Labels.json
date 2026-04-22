@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/home/nick/rdkit-ocaml/build/rdkit/_deps/better_enums-subbuild/CMakeFiles/better_enums-populate"
+		},
+		{
+			"file" : "/home/nick/rdkit-ocaml/build/rdkit/_deps/better_enums-subbuild/CMakeFiles/better_enums-populate.rule"
+		},
+		{
+			"file" : "/home/nick/rdkit-ocaml/build/rdkit/_deps/better_enums-subbuild/CMakeFiles/better_enums-populate-complete.rule"
+		},
+		{
+			"file" : "/home/nick/rdkit-ocaml/build/rdkit/_deps/better_enums-subbuild/better_enums-populate-prefix/src/better_enums-populate-stamp/better_enums-populate-build.rule"
+		},
+		{
+			"file" : "/home/nick/rdkit-ocaml/build/rdkit/_deps/better_enums-subbuild/better_enums-populate-prefix/src/better_enums-populate-stamp/better_enums-populate-configure.rule"
+		},
+		{
+			"file" : "/home/nick/rdkit-ocaml/build/rdkit/_deps/better_enums-subbuild/better_enums-populate-prefix/src/better_enums-populate-stamp/better_enums-populate-download.rule"
+		},
+		{
+			"file" : "/home/nick/rdkit-ocaml/build/rdkit/_deps/better_enums-subbuild/better_enums-populate-prefix/src/better_enums-populate-stamp/better_enums-populate-install.rule"
+		},
+		{
+			"file" : "/home/nick/rdkit-ocaml/build/rdkit/_deps/better_enums-subbuild/better_enums-populate-prefix/src/better_enums-populate-stamp/better_enums-populate-mkdir.rule"
+		},
+		{
+			"file" : "/home/nick/rdkit-ocaml/build/rdkit/_deps/better_enums-subbuild/better_enums-populate-prefix/src/better_enums-populate-stamp/better_enums-populate-patch.rule"
+		},
+		{
+			"file" : "/home/nick/rdkit-ocaml/build/rdkit/_deps/better_enums-subbuild/better_enums-populate-prefix/src/better_enums-populate-stamp/better_enums-populate-test.rule"
+		},
+		{
+			"file" : "/home/nick/rdkit-ocaml/build/rdkit/_deps/better_enums-subbuild/better_enums-populate-prefix/src/better_enums-populate-stamp/better_enums-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"better_enums-populate"
+		],
+		"name" : "better_enums-populate"
+	}
+}

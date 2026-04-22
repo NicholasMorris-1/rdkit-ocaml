@@ -1,0 +1,2 @@
+/nix/store/hb2bs5fg5wkm04x565737qd5nh2hy5nk-gcc-wrapper-15.2.0/bin/ar qc libRDKitFMCS_static.a CMakeFiles/FMCS_static.dir/FMCS.cpp.o CMakeFiles/FMCS_static.dir/Seed.cpp.o CMakeFiles/FMCS_static.dir/TargetMatch.cpp.o CMakeFiles/FMCS_static.dir/MaximumCommonSubgraph.cpp.o CMakeFiles/FMCS_static.dir/SubstructMatchCustom.cpp.o
+/nix/store/hb2bs5fg5wkm04x565737qd5nh2hy5nk-gcc-wrapper-15.2.0/bin/ranlib libRDKitFMCS_static.a

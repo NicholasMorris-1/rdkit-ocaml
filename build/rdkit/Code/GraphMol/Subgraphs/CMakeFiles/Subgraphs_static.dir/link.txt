@@ -1,0 +1,2 @@
+/nix/store/hb2bs5fg5wkm04x565737qd5nh2hy5nk-gcc-wrapper-15.2.0/bin/ar qc libRDKitSubgraphs_static.a CMakeFiles/Subgraphs_static.dir/Subgraphs.cpp.o CMakeFiles/Subgraphs_static.dir/SubgraphUtils.cpp.o
+/nix/store/hb2bs5fg5wkm04x565737qd5nh2hy5nk-gcc-wrapper-15.2.0/bin/ranlib libRDKitSubgraphs_static.a

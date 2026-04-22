@@ -1,0 +1,160 @@
+../../../lib/libRDKitFingerprints.so.1.2026.09.1pre: \
+  /nix/store/jms7zxzm7w1whczwny5m3gkgdjghmi2r-glibc-2.42-51/lib/crti.o \
+  /nix/store/lvwga6ivl1d4lnw0zis9ajs0rqx9gp4i-gcc-15.2.0/lib/gcc/x86_64-unknown-linux-gnu/15.2.0/crtbeginS.o \
+  CMakeFiles/Fingerprints.dir/Fingerprints.cpp.o \
+  CMakeFiles/Fingerprints.dir/PatternFingerprints.cpp.o \
+  CMakeFiles/Fingerprints.dir/MorganFingerprints.cpp.o \
+  CMakeFiles/Fingerprints.dir/AtomPairs.cpp.o \
+  CMakeFiles/Fingerprints.dir/MACCS.cpp.o \
+  CMakeFiles/Fingerprints.dir/MHFP.cpp.o \
+  CMakeFiles/Fingerprints.dir/FingerprintGenerator.cpp.o \
+  CMakeFiles/Fingerprints.dir/AtomPairGenerator.cpp.o \
+  CMakeFiles/Fingerprints.dir/MorganGenerator.cpp.o \
+  CMakeFiles/Fingerprints.dir/RDKitFPGenerator.cpp.o \
+  CMakeFiles/Fingerprints.dir/FingerprintUtil.cpp.o \
+  CMakeFiles/Fingerprints.dir/TopologicalTorsionGenerator.cpp.o \
+  ../../../lib/libRDKitCIPLabeler.so.1.2026.09.1pre \
+  ../../../lib/libRDKitSubgraphs.so.1.2026.09.1pre \
+  ../../../lib/libRDKitSubstructMatch.so.1.2026.09.1pre \
+  ../../../lib/libRDKitSmilesParse.so.1.2026.09.1pre \
+  ../../../lib/libRDKitGenericGroups.so.1.2026.09.1pre \
+  ../../../lib/libRDKitGraphMol.so.1.2026.09.1pre \
+  ../../../lib/libRDKitRDGeometryLib.so.1.2026.09.1pre \
+  ../../../lib/libRDKitDataStructs.so.1.2026.09.1pre \
+  ../../../lib/libRDKitRingDecomposerLib.so.1.2026.09.1pre \
+  ../../../lib/libRDKitRDGeneral.so.1.2026.09.1pre \
+  /nix/store/kfxrq40xhnjbfrl9bdddry2n7bxh6kp0-boost-1.89.0/lib/libboost_serialization.so.1.89.0 \
+  /nix/store/kfxrq40xhnjbfrl9bdddry2n7bxh6kp0-boost-1.89.0/lib/libboost_iostreams.so.1.89.0 \
+  /nix/store/kfxrq40xhnjbfrl9bdddry2n7bxh6kp0-boost-1.89.0/lib/libboost_random.so.1.89.0 \
+  /nix/store/kfxrq40xhnjbfrl9bdddry2n7bxh6kp0-boost-1.89.0/lib/libboost_regex.so.1.89.0 \
+  /nix/store/jms7zxzm7w1whczwny5m3gkgdjghmi2r-glibc-2.42-51/lib/libdl.so \
+  /nix/store/ab3753m6i7isgvzphlar0a8xb84gl96i-gcc-15.2.0-lib/lib/libstdc++.so \
+  /nix/store/jms7zxzm7w1whczwny5m3gkgdjghmi2r-glibc-2.42-51/lib/libm.so \
+  /nix/store/jms7zxzm7w1whczwny5m3gkgdjghmi2r-glibc-2.42-51/lib/libm.so \
+  /nix/store/jms7zxzm7w1whczwny5m3gkgdjghmi2r-glibc-2.42-51/lib/libm.so \
+  /nix/store/jms7zxzm7w1whczwny5m3gkgdjghmi2r-glibc-2.42-51/lib/libm.so.6 \
+  /nix/store/jms7zxzm7w1whczwny5m3gkgdjghmi2r-glibc-2.42-51/lib/libmvec.so.1 \
+  /nix/store/ab3753m6i7isgvzphlar0a8xb84gl96i-gcc-15.2.0-lib/lib/libgcc_s.so \
+  /nix/store/ab3753m6i7isgvzphlar0a8xb84gl96i-gcc-15.2.0-lib/lib/libgcc_s.so \
+  /nix/store/ab3753m6i7isgvzphlar0a8xb84gl96i-gcc-15.2.0-lib/lib/libgcc_s.so \
+  /nix/store/ab3753m6i7isgvzphlar0a8xb84gl96i-gcc-15.2.0-lib/lib/libgcc_s.so.1 \
+  /nix/store/lvwga6ivl1d4lnw0zis9ajs0rqx9gp4i-gcc-15.2.0/lib/gcc/x86_64-unknown-linux-gnu/15.2.0/libgcc.a \
+  /nix/store/jms7zxzm7w1whczwny5m3gkgdjghmi2r-glibc-2.42-51/lib/libc.so \
+  /nix/store/jms7zxzm7w1whczwny5m3gkgdjghmi2r-glibc-2.42-51/lib/libc.so \
+  /nix/store/jms7zxzm7w1whczwny5m3gkgdjghmi2r-glibc-2.42-51/lib/libc.so \
+  /nix/store/jms7zxzm7w1whczwny5m3gkgdjghmi2r-glibc-2.42-51/lib/libc.so.6 \
+  /nix/store/jms7zxzm7w1whczwny5m3gkgdjghmi2r-glibc-2.42-51/lib/libc_nonshared.a \
+  /nix/store/jms7zxzm7w1whczwny5m3gkgdjghmi2r-glibc-2.42-51/lib/ld-linux-x86-64.so.2 \
+  /nix/store/ab3753m6i7isgvzphlar0a8xb84gl96i-gcc-15.2.0-lib/lib/libgcc_s.so \
+  /nix/store/ab3753m6i7isgvzphlar0a8xb84gl96i-gcc-15.2.0-lib/lib/libgcc_s.so \
+  /nix/store/ab3753m6i7isgvzphlar0a8xb84gl96i-gcc-15.2.0-lib/lib/libgcc_s.so \
+  /nix/store/ab3753m6i7isgvzphlar0a8xb84gl96i-gcc-15.2.0-lib/lib/libgcc_s.so.1 \
+  /nix/store/lvwga6ivl1d4lnw0zis9ajs0rqx9gp4i-gcc-15.2.0/lib/gcc/x86_64-unknown-linux-gnu/15.2.0/libgcc.a \
+  /nix/store/lvwga6ivl1d4lnw0zis9ajs0rqx9gp4i-gcc-15.2.0/lib/gcc/x86_64-unknown-linux-gnu/15.2.0/crtendS.o \
+  /nix/store/jms7zxzm7w1whczwny5m3gkgdjghmi2r-glibc-2.42-51/lib/crtn.o
+
+/nix/store/jms7zxzm7w1whczwny5m3gkgdjghmi2r-glibc-2.42-51/lib/crti.o:
+
+/nix/store/lvwga6ivl1d4lnw0zis9ajs0rqx9gp4i-gcc-15.2.0/lib/gcc/x86_64-unknown-linux-gnu/15.2.0/crtbeginS.o:
+
+CMakeFiles/Fingerprints.dir/Fingerprints.cpp.o:
+
+CMakeFiles/Fingerprints.dir/PatternFingerprints.cpp.o:
+
+CMakeFiles/Fingerprints.dir/MorganFingerprints.cpp.o:
+
+CMakeFiles/Fingerprints.dir/AtomPairs.cpp.o:
+
+CMakeFiles/Fingerprints.dir/MACCS.cpp.o:
+
+CMakeFiles/Fingerprints.dir/MHFP.cpp.o:
+
+CMakeFiles/Fingerprints.dir/FingerprintGenerator.cpp.o:
+
+CMakeFiles/Fingerprints.dir/AtomPairGenerator.cpp.o:
+
+CMakeFiles/Fingerprints.dir/MorganGenerator.cpp.o:
+
+CMakeFiles/Fingerprints.dir/RDKitFPGenerator.cpp.o:
+
+CMakeFiles/Fingerprints.dir/FingerprintUtil.cpp.o:
+
+CMakeFiles/Fingerprints.dir/TopologicalTorsionGenerator.cpp.o:
+
+../../../lib/libRDKitCIPLabeler.so.1.2026.09.1pre:
+
+../../../lib/libRDKitSubgraphs.so.1.2026.09.1pre:
+
+../../../lib/libRDKitSubstructMatch.so.1.2026.09.1pre:
+
+../../../lib/libRDKitSmilesParse.so.1.2026.09.1pre:
+
+../../../lib/libRDKitGenericGroups.so.1.2026.09.1pre:
+
+../../../lib/libRDKitGraphMol.so.1.2026.09.1pre:
+
+../../../lib/libRDKitRDGeometryLib.so.1.2026.09.1pre:
+
+../../../lib/libRDKitDataStructs.so.1.2026.09.1pre:
+
+../../../lib/libRDKitRingDecomposerLib.so.1.2026.09.1pre:
+
+../../../lib/libRDKitRDGeneral.so.1.2026.09.1pre:
+
+/nix/store/kfxrq40xhnjbfrl9bdddry2n7bxh6kp0-boost-1.89.0/lib/libboost_serialization.so.1.89.0:
+
+/nix/store/kfxrq40xhnjbfrl9bdddry2n7bxh6kp0-boost-1.89.0/lib/libboost_iostreams.so.1.89.0:
+
+/nix/store/kfxrq40xhnjbfrl9bdddry2n7bxh6kp0-boost-1.89.0/lib/libboost_random.so.1.89.0:
+
+/nix/store/kfxrq40xhnjbfrl9bdddry2n7bxh6kp0-boost-1.89.0/lib/libboost_regex.so.1.89.0:
+
+/nix/store/jms7zxzm7w1whczwny5m3gkgdjghmi2r-glibc-2.42-51/lib/libdl.so:
+
+/nix/store/ab3753m6i7isgvzphlar0a8xb84gl96i-gcc-15.2.0-lib/lib/libstdc++.so:
+
+/nix/store/jms7zxzm7w1whczwny5m3gkgdjghmi2r-glibc-2.42-51/lib/libm.so:
+
+/nix/store/jms7zxzm7w1whczwny5m3gkgdjghmi2r-glibc-2.42-51/lib/libm.so:
+
+/nix/store/jms7zxzm7w1whczwny5m3gkgdjghmi2r-glibc-2.42-51/lib/libm.so:
+
+/nix/store/jms7zxzm7w1whczwny5m3gkgdjghmi2r-glibc-2.42-51/lib/libm.so.6:
+
+/nix/store/jms7zxzm7w1whczwny5m3gkgdjghmi2r-glibc-2.42-51/lib/libmvec.so.1:
+
+/nix/store/ab3753m6i7isgvzphlar0a8xb84gl96i-gcc-15.2.0-lib/lib/libgcc_s.so:
+
+/nix/store/ab3753m6i7isgvzphlar0a8xb84gl96i-gcc-15.2.0-lib/lib/libgcc_s.so:
+
+/nix/store/ab3753m6i7isgvzphlar0a8xb84gl96i-gcc-15.2.0-lib/lib/libgcc_s.so:
+
+/nix/store/ab3753m6i7isgvzphlar0a8xb84gl96i-gcc-15.2.0-lib/lib/libgcc_s.so.1:
+
+/nix/store/lvwga6ivl1d4lnw0zis9ajs0rqx9gp4i-gcc-15.2.0/lib/gcc/x86_64-unknown-linux-gnu/15.2.0/libgcc.a:
+
+/nix/store/jms7zxzm7w1whczwny5m3gkgdjghmi2r-glibc-2.42-51/lib/libc.so:
+
+/nix/store/jms7zxzm7w1whczwny5m3gkgdjghmi2r-glibc-2.42-51/lib/libc.so:
+
+/nix/store/jms7zxzm7w1whczwny5m3gkgdjghmi2r-glibc-2.42-51/lib/libc.so:
+
+/nix/store/jms7zxzm7w1whczwny5m3gkgdjghmi2r-glibc-2.42-51/lib/libc.so.6:
+
+/nix/store/jms7zxzm7w1whczwny5m3gkgdjghmi2r-glibc-2.42-51/lib/libc_nonshared.a:
+
+/nix/store/jms7zxzm7w1whczwny5m3gkgdjghmi2r-glibc-2.42-51/lib/ld-linux-x86-64.so.2:
+
+/nix/store/ab3753m6i7isgvzphlar0a8xb84gl96i-gcc-15.2.0-lib/lib/libgcc_s.so:
+
+/nix/store/ab3753m6i7isgvzphlar0a8xb84gl96i-gcc-15.2.0-lib/lib/libgcc_s.so:
+
+/nix/store/ab3753m6i7isgvzphlar0a8xb84gl96i-gcc-15.2.0-lib/lib/libgcc_s.so:
+
+/nix/store/ab3753m6i7isgvzphlar0a8xb84gl96i-gcc-15.2.0-lib/lib/libgcc_s.so.1:
+
+/nix/store/lvwga6ivl1d4lnw0zis9ajs0rqx9gp4i-gcc-15.2.0/lib/gcc/x86_64-unknown-linux-gnu/15.2.0/libgcc.a:
+
+/nix/store/lvwga6ivl1d4lnw0zis9ajs0rqx9gp4i-gcc-15.2.0/lib/gcc/x86_64-unknown-linux-gnu/15.2.0/crtendS.o:
+
+/nix/store/jms7zxzm7w1whczwny5m3gkgdjghmi2r-glibc-2.42-51/lib/crtn.o:

@@ -1,2 +1,4 @@
 (library
- (name rdkit_ocaml))
+ (name rdkit_ocaml)
+(libraries ctypes ctypes-foreign)
+)

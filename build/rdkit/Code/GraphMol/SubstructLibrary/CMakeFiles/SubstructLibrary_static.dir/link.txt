@@ -1,0 +1,2 @@
+/nix/store/hb2bs5fg5wkm04x565737qd5nh2hy5nk-gcc-wrapper-15.2.0/bin/ar qc libRDKitSubstructLibrary_static.a CMakeFiles/SubstructLibrary_static.dir/SubstructLibrary.cpp.o CMakeFiles/SubstructLibrary_static.dir/PatternFactory.cpp.o
+/nix/store/hb2bs5fg5wkm04x565737qd5nh2hy5nk-gcc-wrapper-15.2.0/bin/ranlib libRDKitSubstructLibrary_static.a

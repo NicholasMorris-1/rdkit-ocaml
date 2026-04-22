@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/nick/rdkit-ocaml/build/rdkit/_deps/catch2-subbuild/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

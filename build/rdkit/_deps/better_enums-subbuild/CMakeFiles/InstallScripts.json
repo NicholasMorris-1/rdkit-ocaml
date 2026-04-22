@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/nick/rdkit-ocaml/build/rdkit/_deps/better_enums-subbuild/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

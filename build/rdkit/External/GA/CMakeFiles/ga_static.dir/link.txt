@@ -1,0 +1,2 @@
+/nix/store/hb2bs5fg5wkm04x565737qd5nh2hy5nk-gcc-wrapper-15.2.0/bin/ar qc libRDKitga_static.a CMakeFiles/ga_static.dir/ga/StringChromosome.cpp.o CMakeFiles/ga_static.dir/ga/Chromosome.cpp.o CMakeFiles/ga_static.dir/ga/IntegerStringChromosomePolicy.cpp.o CMakeFiles/ga_static.dir/ga/BinaryStringChromosomePolicy.cpp.o CMakeFiles/ga_static.dir/util/RandomUtil.cpp.o CMakeFiles/ga_static.dir/util/Util.cpp.o
+/nix/store/hb2bs5fg5wkm04x565737qd5nh2hy5nk-gcc-wrapper-15.2.0/bin/ranlib libRDKitga_static.a

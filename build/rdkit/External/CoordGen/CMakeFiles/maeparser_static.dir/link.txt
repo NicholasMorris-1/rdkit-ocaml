@@ -1,0 +1,2 @@
+/nix/store/hb2bs5fg5wkm04x565737qd5nh2hy5nk-gcc-wrapper-15.2.0/bin/ar qc libRDKitmaeparser_static.a CMakeFiles/maeparser_static.dir/maeparser/Buffer.cpp.o CMakeFiles/maeparser_static.dir/maeparser/MaeBlock.cpp.o CMakeFiles/maeparser_static.dir/maeparser/MaeParser.cpp.o CMakeFiles/maeparser_static.dir/maeparser/Reader.cpp.o CMakeFiles/maeparser_static.dir/maeparser/Writer.cpp.o
+/nix/store/hb2bs5fg5wkm04x565737qd5nh2hy5nk-gcc-wrapper-15.2.0/bin/ranlib libRDKitmaeparser_static.a

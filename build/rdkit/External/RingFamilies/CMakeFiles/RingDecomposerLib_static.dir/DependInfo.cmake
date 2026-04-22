@@ -1,0 +1,35 @@
+
+# Consider dependencies only in project.
+set(CMAKE_DEPENDS_IN_PROJECT_ONLY OFF)
+
+# The set of languages for which implicit dependencies are needed:
+set(CMAKE_DEPENDS_LANGUAGES
+  )
+
+# The set of dependency files which are needed:
+set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/home/nick/rdkit-ocaml/vendor/rdkit/External/RingFamilies/RingDecomposerLib/src/RingDecomposerLib/RDLapsp.c" "External/RingFamilies/CMakeFiles/RingDecomposerLib_static.dir/RingDecomposerLib/src/RingDecomposerLib/RDLapsp.c.o" "gcc" "External/RingFamilies/CMakeFiles/RingDecomposerLib_static.dir/RingDecomposerLib/src/RingDecomposerLib/RDLapsp.c.o.d"
+  "/home/nick/rdkit-ocaml/vendor/rdkit/External/RingFamilies/RingDecomposerLib/src/RingDecomposerLib/RDLbitset.c" "External/RingFamilies/CMakeFiles/RingDecomposerLib_static.dir/RingDecomposerLib/src/RingDecomposerLib/RDLbitset.c.o" "gcc" "External/RingFamilies/CMakeFiles/RingDecomposerLib_static.dir/RingDecomposerLib/src/RingDecomposerLib/RDLbitset.c.o.d"
+  "/home/nick/rdkit-ocaml/vendor/rdkit/External/RingFamilies/RingDecomposerLib/src/RingDecomposerLib/RDLcycleFams.c" "External/RingFamilies/CMakeFiles/RingDecomposerLib_static.dir/RingDecomposerLib/src/RingDecomposerLib/RDLcycleFams.c.o" "gcc" "External/RingFamilies/CMakeFiles/RingDecomposerLib_static.dir/RingDecomposerLib/src/RingDecomposerLib/RDLcycleFams.c.o.d"
+  "/home/nick/rdkit-ocaml/vendor/rdkit/External/RingFamilies/RingDecomposerLib/src/RingDecomposerLib/RDLdimacs.c" "External/RingFamilies/CMakeFiles/RingDecomposerLib_static.dir/RingDecomposerLib/src/RingDecomposerLib/RDLdimacs.c.o" "gcc" "External/RingFamilies/CMakeFiles/RingDecomposerLib_static.dir/RingDecomposerLib/src/RingDecomposerLib/RDLdimacs.c.o.d"
+  "/home/nick/rdkit-ocaml/vendor/rdkit/External/RingFamilies/RingDecomposerLib/src/RingDecomposerLib/RDLgraph.c" "External/RingFamilies/CMakeFiles/RingDecomposerLib_static.dir/RingDecomposerLib/src/RingDecomposerLib/RDLgraph.c.o" "gcc" "External/RingFamilies/CMakeFiles/RingDecomposerLib_static.dir/RingDecomposerLib/src/RingDecomposerLib/RDLgraph.c.o.d"
+  "/home/nick/rdkit-ocaml/vendor/rdkit/External/RingFamilies/RingDecomposerLib/src/RingDecomposerLib/RDLhandler.c" "External/RingFamilies/CMakeFiles/RingDecomposerLib_static.dir/RingDecomposerLib/src/RingDecomposerLib/RDLhandler.c.o" "gcc" "External/RingFamilies/CMakeFiles/RingDecomposerLib_static.dir/RingDecomposerLib/src/RingDecomposerLib/RDLhandler.c.o.d"
+  "/home/nick/rdkit-ocaml/vendor/rdkit/External/RingFamilies/RingDecomposerLib/src/RingDecomposerLib/RDLinfo.c" "External/RingFamilies/CMakeFiles/RingDecomposerLib_static.dir/RingDecomposerLib/src/RingDecomposerLib/RDLinfo.c.o" "gcc" "External/RingFamilies/CMakeFiles/RingDecomposerLib_static.dir/RingDecomposerLib/src/RingDecomposerLib/RDLinfo.c.o.d"
+  "/home/nick/rdkit-ocaml/vendor/rdkit/External/RingFamilies/RingDecomposerLib/src/RingDecomposerLib/RDLrelation.c" "External/RingFamilies/CMakeFiles/RingDecomposerLib_static.dir/RingDecomposerLib/src/RingDecomposerLib/RDLrelation.c.o" "gcc" "External/RingFamilies/CMakeFiles/RingDecomposerLib_static.dir/RingDecomposerLib/src/RingDecomposerLib/RDLrelation.c.o.d"
+  "/home/nick/rdkit-ocaml/vendor/rdkit/External/RingFamilies/RingDecomposerLib/src/RingDecomposerLib/RDLstack.c" "External/RingFamilies/CMakeFiles/RingDecomposerLib_static.dir/RingDecomposerLib/src/RingDecomposerLib/RDLstack.c.o" "gcc" "External/RingFamilies/CMakeFiles/RingDecomposerLib_static.dir/RingDecomposerLib/src/RingDecomposerLib/RDLstack.c.o.d"
+  "/home/nick/rdkit-ocaml/vendor/rdkit/External/RingFamilies/RingDecomposerLib/src/RingDecomposerLib/RDLtarjan.c" "External/RingFamilies/CMakeFiles/RingDecomposerLib_static.dir/RingDecomposerLib/src/RingDecomposerLib/RDLtarjan.c.o" "gcc" "External/RingFamilies/CMakeFiles/RingDecomposerLib_static.dir/RingDecomposerLib/src/RingDecomposerLib/RDLtarjan.c.o.d"
+  "/home/nick/rdkit-ocaml/vendor/rdkit/External/RingFamilies/RingDecomposerLib/src/RingDecomposerLib/RDLtesting.c" "External/RingFamilies/CMakeFiles/RingDecomposerLib_static.dir/RingDecomposerLib/src/RingDecomposerLib/RDLtesting.c.o" "gcc" "External/RingFamilies/CMakeFiles/RingDecomposerLib_static.dir/RingDecomposerLib/src/RingDecomposerLib/RDLtesting.c.o.d"
+  "/home/nick/rdkit-ocaml/vendor/rdkit/External/RingFamilies/RingDecomposerLib/src/RingDecomposerLib/RDLutility.c" "External/RingFamilies/CMakeFiles/RingDecomposerLib_static.dir/RingDecomposerLib/src/RingDecomposerLib/RDLutility.c.o" "gcc" "External/RingFamilies/CMakeFiles/RingDecomposerLib_static.dir/RingDecomposerLib/src/RingDecomposerLib/RDLutility.c.o.d"
+  "/home/nick/rdkit-ocaml/vendor/rdkit/External/RingFamilies/RingDecomposerLib/src/RingDecomposerLib/RingDecomposerLib.c" "External/RingFamilies/CMakeFiles/RingDecomposerLib_static.dir/RingDecomposerLib/src/RingDecomposerLib/RingDecomposerLib.c.o" "gcc" "External/RingFamilies/CMakeFiles/RingDecomposerLib_static.dir/RingDecomposerLib/src/RingDecomposerLib/RingDecomposerLib.c.o.d"
+  )
+
+# Targets to which this target links which contain Fortran sources.
+set(CMAKE_Fortran_TARGET_LINKED_INFO_FILES
+  )
+
+# Targets to which this target links which contain Fortran sources.
+set(CMAKE_Fortran_TARGET_FORWARD_LINKED_INFO_FILES
+  )
+
+# Fortran module output directory.
+set(CMAKE_Fortran_TARGET_MODULE_DIR "")

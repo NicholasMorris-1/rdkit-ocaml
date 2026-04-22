@@ -1,0 +1,2 @@
+/nix/store/hb2bs5fg5wkm04x565737qd5nh2hy5nk-gcc-wrapper-15.2.0/bin/ar qc libRDKitFilterCatalog_static.a CMakeFiles/FilterCatalog_static.dir/Filters.cpp.o CMakeFiles/FilterCatalog_static.dir/FilterCatalog.cpp.o CMakeFiles/FilterCatalog_static.dir/FilterCatalogEntry.cpp.o CMakeFiles/FilterCatalog_static.dir/FilterCatalogRunner.cpp.o CMakeFiles/FilterCatalog_static.dir/FilterMatchers.cpp.o CMakeFiles/FilterCatalog_static.dir/FunctionalGroupHierarchy.cpp.o
+/nix/store/hb2bs5fg5wkm04x565737qd5nh2hy5nk-gcc-wrapper-15.2.0/bin/ranlib libRDKitFilterCatalog_static.a

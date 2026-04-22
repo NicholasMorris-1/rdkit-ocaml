@@ -23,5 +23,12 @@ Then run
 
 This should hopefully build the rdkit repo and generate the required librdkitcffi.so file that is linked in the project. 
 
-If you really do not want to use Nix, you can resolve the dependencies manually but this can be quite tricky. More info is [here](https://www.rdkit.org/docs/Install.html)
+If you really do not want to use Nix, you can resolve the dependencies manually but this can be quite tricky. More info is [here](https://www.rdkit.org/docs/Install.html). 
+
+### Running the minimal example 
+
+`dune build
+ cd lib/
+ dune exec rdkit-ocaml
+`
 

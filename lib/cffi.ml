@@ -7,7 +7,7 @@ open Foreign
 
 let rdkit =
   Dl.dlopen
-    ~filename:"../vendor/rdkit/lib/librdkitcffi.so"
+    ~filename:"../build/rdkit/lib/librdkitcffi.so"
     ~flags:[ Dl.RTLD_NOW ]
 
 let libc = Dl.dlopen ~filename:"libc.so.6" ~flags:[ Dl.RTLD_NOW ]

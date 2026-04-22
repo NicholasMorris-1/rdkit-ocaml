@@ -1,0 +1,4 @@
+(executable
+ (public_name rdkit-ocaml)
+ (name main)
+ (libraries rdkit_ocaml))

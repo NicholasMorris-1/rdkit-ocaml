@@ -1,2 +1,0 @@
-/nix/store/hb2bs5fg5wkm04x565737qd5nh2hy5nk-gcc-wrapper-15.2.0/bin/ar qc libRDKitDistGeomHelpers_static.a CMakeFiles/DistGeomHelpers_static.dir/BoundsMatrixBuilder.cpp.o CMakeFiles/DistGeomHelpers_static.dir/Embedder.cpp.o CMakeFiles/DistGeomHelpers_static.dir/EmbedderUtils.cpp.o
-/nix/store/hb2bs5fg5wkm04x565737qd5nh2hy5nk-gcc-wrapper-15.2.0/bin/ranlib libRDKitDistGeomHelpers_static.a

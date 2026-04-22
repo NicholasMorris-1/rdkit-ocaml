@@ -1,2 +1,0 @@
-/nix/store/hb2bs5fg5wkm04x565737qd5nh2hy5nk-gcc-wrapper-15.2.0/bin/ar qc libRDKitO3AAlign_static.a CMakeFiles/O3AAlign_static.dir/O3AAlignMolecules.cpp.o
-/nix/store/hb2bs5fg5wkm04x565737qd5nh2hy5nk-gcc-wrapper-15.2.0/bin/ranlib libRDKitO3AAlign_static.a

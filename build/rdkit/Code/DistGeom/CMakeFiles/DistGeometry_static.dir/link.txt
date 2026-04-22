@@ -1,2 +1,0 @@
-/nix/store/hb2bs5fg5wkm04x565737qd5nh2hy5nk-gcc-wrapper-15.2.0/bin/ar qc libRDKitDistGeometry_static.a CMakeFiles/DistGeometry_static.dir/DistGeomUtils.cpp.o CMakeFiles/DistGeometry_static.dir/TriangleSmooth.cpp.o CMakeFiles/DistGeometry_static.dir/DistViolationContribs.cpp.o CMakeFiles/DistGeometry_static.dir/ChiralViolationContribs.cpp.o
-/nix/store/hb2bs5fg5wkm04x565737qd5nh2hy5nk-gcc-wrapper-15.2.0/bin/ranlib libRDKitDistGeometry_static.a

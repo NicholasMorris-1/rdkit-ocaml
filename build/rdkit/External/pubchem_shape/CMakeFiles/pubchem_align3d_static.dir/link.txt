@@ -1,2 +1,0 @@
-/nix/store/hb2bs5fg5wkm04x565737qd5nh2hy5nk-gcc-wrapper-15.2.0/bin/ar qc libRDKitpubchem_align3d_static.a "CMakeFiles/pubchem_align3d_static.dir/pubchem-align3d/shape_functions1.cpp.o" "CMakeFiles/pubchem_align3d_static.dir/pubchem-align3d/shape_functions2.cpp.o" "CMakeFiles/pubchem_align3d_static.dir/pubchem-align3d/shape_neighbor.cpp.o"
-/nix/store/hb2bs5fg5wkm04x565737qd5nh2hy5nk-gcc-wrapper-15.2.0/bin/ranlib libRDKitpubchem_align3d_static.a

@@ -1,2 +1,0 @@
-/nix/store/hb2bs5fg5wkm04x565737qd5nh2hy5nk-gcc-wrapper-15.2.0/bin/ar qc libexpat.a "CMakeFiles/expat.dir/expatpp-code-r6-trunk/expat/lib/xmlparse.c.o" "CMakeFiles/expat.dir/expatpp-code-r6-trunk/expat/lib/xmlrole.c.o" "CMakeFiles/expat.dir/expatpp-code-r6-trunk/expat/lib/xmltok.c.o" "CMakeFiles/expat.dir/expatpp-code-r6-trunk/expat/lib/xmltok_impl.c.o" "CMakeFiles/expat.dir/expatpp-code-r6-trunk/expat/lib/xmltok_ns.c.o" "CMakeFiles/expat.dir/expatpp-code-r6-trunk/src_pp/expatpp.cpp.o"
-/nix/store/hb2bs5fg5wkm04x565737qd5nh2hy5nk-gcc-wrapper-15.2.0/bin/ranlib libexpat.a

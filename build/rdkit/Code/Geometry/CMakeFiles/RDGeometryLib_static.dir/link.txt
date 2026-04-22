@@ -1,2 +1,0 @@
-/nix/store/hb2bs5fg5wkm04x565737qd5nh2hy5nk-gcc-wrapper-15.2.0/bin/ar qc libRDKitRDGeometryLib_static.a CMakeFiles/RDGeometryLib_static.dir/point.cpp.o CMakeFiles/RDGeometryLib_static.dir/Transform2D.cpp.o CMakeFiles/RDGeometryLib_static.dir/Transform3D.cpp.o CMakeFiles/RDGeometryLib_static.dir/UniformGrid3D.cpp.o CMakeFiles/RDGeometryLib_static.dir/UniformRealValueGrid3D.cpp.o CMakeFiles/RDGeometryLib_static.dir/GridUtils.cpp.o
-/nix/store/hb2bs5fg5wkm04x565737qd5nh2hy5nk-gcc-wrapper-15.2.0/bin/ranlib libRDKitRDGeometryLib_static.a

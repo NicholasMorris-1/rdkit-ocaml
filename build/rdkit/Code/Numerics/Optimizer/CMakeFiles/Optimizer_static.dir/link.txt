@@ -1,2 +1,0 @@
-/nix/store/hb2bs5fg5wkm04x565737qd5nh2hy5nk-gcc-wrapper-15.2.0/bin/ar qc libRDKitOptimizer_static.a CMakeFiles/Optimizer_static.dir/BFGSOpt.cpp.o CMakeFiles/Optimizer_static.dir/LinearSearch.cpp.o
-/nix/store/hb2bs5fg5wkm04x565737qd5nh2hy5nk-gcc-wrapper-15.2.0/bin/ranlib libRDKitOptimizer_static.a

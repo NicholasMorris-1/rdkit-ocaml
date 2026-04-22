@@ -1,2 +1,0 @@
-/nix/store/hb2bs5fg5wkm04x565737qd5nh2hy5nk-gcc-wrapper-15.2.0/bin/ar qc libRDKitSLNParse_static.a CMakeFiles/SLNParse_static.dir/SLNParse.cpp.o CMakeFiles/SLNParse_static.dir/SLNAttribs.cpp.o CMakeFiles/SLNParse_static.dir/sln.tab.cpp.o CMakeFiles/SLNParse_static.dir/lex.yysln.cpp.o
-/nix/store/hb2bs5fg5wkm04x565737qd5nh2hy5nk-gcc-wrapper-15.2.0/bin/ranlib libRDKitSLNParse_static.a

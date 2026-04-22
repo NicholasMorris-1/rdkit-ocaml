@@ -1,2 +1,0 @@
-/nix/store/hb2bs5fg5wkm04x565737qd5nh2hy5nk-gcc-wrapper-15.2.0/bin/ar qc libRDKitEnumerateStereoisomers_static.a CMakeFiles/EnumerateStereoisomers_static.dir/EnumerateStereoisomers.cpp.o CMakeFiles/EnumerateStereoisomers_static.dir/Flippers.cpp.o
-/nix/store/hb2bs5fg5wkm04x565737qd5nh2hy5nk-gcc-wrapper-15.2.0/bin/ranlib libRDKitEnumerateStereoisomers_static.a

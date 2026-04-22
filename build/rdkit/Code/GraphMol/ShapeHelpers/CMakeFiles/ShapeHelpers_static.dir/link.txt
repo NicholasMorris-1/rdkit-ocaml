@@ -1,2 +1,0 @@
-/nix/store/hb2bs5fg5wkm04x565737qd5nh2hy5nk-gcc-wrapper-15.2.0/bin/ar qc libRDKitShapeHelpers_static.a CMakeFiles/ShapeHelpers_static.dir/ShapeEncoder.cpp.o CMakeFiles/ShapeHelpers_static.dir/ShapeUtils.cpp.o
-/nix/store/hb2bs5fg5wkm04x565737qd5nh2hy5nk-gcc-wrapper-15.2.0/bin/ranlib libRDKitShapeHelpers_static.a

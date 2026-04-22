@@ -1,3 +1,0 @@
-/home/nick/rdkit-ocaml/build/rdkit/_deps/better_enums-subbuild/CMakeFiles/better_enums-populate.dir
-/home/nick/rdkit-ocaml/build/rdkit/_deps/better_enums-subbuild/CMakeFiles/edit_cache.dir
-/home/nick/rdkit-ocaml/build/rdkit/_deps/better_enums-subbuild/CMakeFiles/rebuild_cache.dir

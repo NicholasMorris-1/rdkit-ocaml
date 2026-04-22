@@ -63,6 +63,7 @@ libtool
 
 # Build output directories (common conventions)
 build/
+build/rdkit
 release/
 debug/
 out/

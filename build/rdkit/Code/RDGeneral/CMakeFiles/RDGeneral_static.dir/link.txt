@@ -1,2 +1,0 @@
-/nix/store/hb2bs5fg5wkm04x565737qd5nh2hy5nk-gcc-wrapper-15.2.0/bin/ar qc libRDKitRDGeneral_static.a CMakeFiles/RDGeneral_static.dir/Invariant.cpp.o CMakeFiles/RDGeneral_static.dir/types.cpp.o CMakeFiles/RDGeneral_static.dir/utils.cpp.o CMakeFiles/RDGeneral_static.dir/RDGeneralExceptions.cpp.o CMakeFiles/RDGeneral_static.dir/RDLog.cpp.o CMakeFiles/RDGeneral_static.dir/LocaleSwitcher.cpp.o CMakeFiles/RDGeneral_static.dir/versions.cpp.o
-/nix/store/hb2bs5fg5wkm04x565737qd5nh2hy5nk-gcc-wrapper-15.2.0/bin/ranlib libRDKitRDGeneral_static.a

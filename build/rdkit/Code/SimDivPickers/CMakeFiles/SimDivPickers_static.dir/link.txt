@@ -1,2 +1,0 @@
-/nix/store/hb2bs5fg5wkm04x565737qd5nh2hy5nk-gcc-wrapper-15.2.0/bin/ar qc libRDKitSimDivPickers_static.a CMakeFiles/SimDivPickers_static.dir/DistPicker.cpp.o CMakeFiles/SimDivPickers_static.dir/MaxMinPicker.cpp.o CMakeFiles/SimDivPickers_static.dir/HierarchicalClusterPicker.cpp.o
-/nix/store/hb2bs5fg5wkm04x565737qd5nh2hy5nk-gcc-wrapper-15.2.0/bin/ranlib libRDKitSimDivPickers_static.a

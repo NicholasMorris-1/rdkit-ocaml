@@ -27,8 +27,8 @@ If you really do not want to use Nix, you can resolve the dependencies manually 
 
 ### Running the minimal example 
 
-`dune build
+``` shell
+ dune build
  cd lib/
  dune exec rdkit-ocaml
-`
-
+```

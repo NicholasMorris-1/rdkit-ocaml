@@ -35,9 +35,10 @@ let short_t = short
 let c_free =
   foreign ~from:libc "free" (ptr void @-> returning void)
 
-(* ───────────────────────────────────────────────
-   Logging & Housekeeping
-   ─────────────────────────────────────────────── *)
+
+
+
+(*Logging and housekeeping*)
 
 let version =
   foreign ~from:rdkit "version" (void @-> returning string)
@@ -59,9 +60,7 @@ let enable_logger =
 let disable_logger =
   foreign ~from:rdkit "disable_logger" (string @-> returning short_t)
 
-(* ───────────────────────────────────────────────
-      Molecules
-   ─────────────────────────────────────────────── *)
+(*Molecules*)
 
 (** [get_mol smiles mol_sz_ptr details_json] parses a SMILES (or molblock,
     or InChI) and returns a pickle.  [mol_sz_ptr] receives the byte length.
@@ -80,9 +79,9 @@ let get_rxn =
   foreign ~from:rdkit "get_rxn"
     (string @-> sz_ptr @-> string @-> returning pkl_typ)
 
-(* ───────────────────────────────────────────────
-Pickle Serialisation  (to molblock, SMILES, etc.)
-   ─────────────────────────────────────────────── *)
+
+(*Pickle serialization and string representations*)
+
 
 (** Returns a V2000 molblock string.  Caller must [free_ptr] the result. *)
 let get_molblock =
@@ -149,9 +148,7 @@ let get_inchikey_for_inchi =
     Some (foreign ~from:rdkit "get_inchikey_for_inchi" (string @-> returning string))
   with _ -> None
 
-(* ───────────────────────────────────────────────
-    Fragments
-   ─────────────────────────────────────────────── *)
+(*Fragementation *)
 
 (** [get_mol_frags pkl pkl_sz frags_sz_array_ptr num_frags_ptr details mappings_ptr]
 
@@ -177,9 +174,7 @@ let free_mol_array =
   foreign ~from:rdkit "free_mol_array"
     (ptr (ptr pkl_typ) @-> ptr sz_ptr @-> returning void)
 
-(* ───────────────────────────────────────────────
-   Substructure search
-   ─────────────────────────────────────────────── *)
+(*Substructure search*)
 
 (** Returns a JSON object with the first match atom indices, or ["{}"] on
     no match. *)
@@ -198,9 +193,7 @@ let get_substruct_matches =
      @-> json_opt
      @-> returning string)
 
-(* ───────────────────────────────────────────────
-   Drawing
-   ─────────────────────────────────────────────── *)
+(* Drawing  *)
 
 (** Returns an SVG string for a molecule. *)
 let get_svg =
@@ -212,9 +205,7 @@ let get_rxn_svg =
   foreign ~from:rdkit "get_rxn_svg"
     (pkl_typ @-> size_t @-> json_opt @-> returning string)
 
-(* ───────────────────────────────────────────────
-   Calculators / descriptors
-   ─────────────────────────────────────────────── *)
+(*Descriptors*)
 
 (** Returns a JSON object of RDKit descriptors. *)
 let get_descriptors =
@@ -321,9 +312,7 @@ let remove_hs =
   foreign ~from:rdkit "remove_hs"
     (pkl_ptr @-> sz_ptr @-> json_opt @-> returning short_t)
 
-(* ───────────────────────────────────────────────
-   Standardisation  (same in-place pattern)
-   ─────────────────────────────────────────────── *)
+
 
 let cleanup =
   foreign ~from:rdkit "cleanup"
@@ -353,9 +342,8 @@ let fragment_parent =
   foreign ~from:rdkit "fragment_parent"
     (pkl_ptr @-> sz_ptr @-> json_opt @-> returning short_t)
 
-(* ───────────────────────────────────────────────
-   Coordinates
-   ─────────────────────────────────────────────── *)
+
+(*Coordinates*)
 
 (** Prefer CoordGen over the built-in 2-D coordinate generator. *)
 let prefer_coordgen =
@@ -389,9 +377,7 @@ let set_2d_coords_aligned =
      @-> ptr_opt (ptr char) (* match_json — char ** *)
      @-> returning short_t)
 
-(* ───────────────────────────────────────────────
-   Chirality
-   ─────────────────────────────────────────────── *)
+(*Chirality*)
 
 (** Toggle legacy (pre-2021) stereo perception. *)
 let use_legacy_stereo_perception =
@@ -403,9 +389,7 @@ let allow_non_tetrahedral_chirality =
   foreign ~from:rdkit "allow_non_tetrahedral_chirality"
     (short_t @-> returning short_t)
 
-(* ───────────────────────────────────────────────
-   PNG metadata
-   ─────────────────────────────────────────────── *)
+(*PNG Metadata*)
 
 (** Embed a molecule pickle into a PNG blob (in place). *)
 let add_mol_to_png_blob =
@@ -436,9 +420,7 @@ let get_mols_from_png_blob =
      @-> json_opt
      @-> returning short_t)
 
-(* ───────────────────────────────────────────────
-   Logging handles
-   ─────────────────────────────────────────────── *)
+(*Logging Handles*)
 
 (** An opaque log handle returned by [set_log_tee] / [set_log_capture].
     Represented as [void *]. *)
@@ -469,9 +451,7 @@ let clear_log_buffer =
   foreign ~from:rdkit "clear_log_buffer"
     (log_handle_t @-> returning short_t)
 
-(* ───────────────────────────────────────────────
-   Properties
-   ─────────────────────────────────────────────── *)
+(*Properties*)
 
 (** Returns 1 if the molecule has property [key]. *)
 let has_prop =
@@ -512,9 +492,7 @@ let keep_props =
   foreign ~from:rdkit "keep_props"
     (pkl_ptr @-> sz_ptr @-> json_opt @-> returning void)
 
-(* ───────────────────────────────────────────────
-   Convenience helpers
-   ─────────────────────────────────────────────── *)
+(*Helpers*)
 
 (** Allocate a size_t cell initialised to zero, for use with [get_mol] etc. *)
 let alloc_size_t () = allocate size_t (Unsigned.Size_t.of_int 0)

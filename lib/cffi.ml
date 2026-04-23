@@ -5,10 +5,15 @@ open Foreign
 (*Link the .so file, if the build was successful this relative path should point correctly *)
 (* to the file *)
 
+
+
 let rdkit =
-  Dl.dlopen
-    ~filename:"../build/rdkit/lib/librdkitcffi.so"
-    ~flags:[ Dl.RTLD_NOW ]
+  let filepath =
+    match Sys.getenv_opt "RDKIT_CFFI_LIB" with
+    | Some p -> p
+    | None -> failwith "RDKIT_CFFI_LIB not set"
+  in
+  Dl.dlopen ~filename:filepath ~flags:[Dl.RTLD_NOW]
 
 let libc = Dl.dlopen ~filename:"libc.so.6" ~flags:[ Dl.RTLD_NOW ]
 
@@ -34,8 +39,6 @@ let short_t = short
 
 let c_free =
   foreign ~from:libc "free" (ptr void @-> returning void)
-
-
 
 
 (*Logging and housekeeping*)

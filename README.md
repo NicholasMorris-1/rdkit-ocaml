@@ -21,7 +21,9 @@ Then run
 
 `bash build_rdkit.sh` 
 
-This should hopefully build the rdkit repo and generate the required librdkitcffi.so file that is linked in the project. 
+This should hopefully build the rdkit repo and generate the required librdkitcffi.so file that is linked in the project. You need to export the library path so the compiled project can find the file 
+
+`export RDKIT_CFFI_LIB=/path/to/librdkitcffi.so` 
 
 If you really do not want to use Nix, you can resolve the dependencies manually but this can be quite tricky. More info is [here](https://www.rdkit.org/docs/Install.html). 
 

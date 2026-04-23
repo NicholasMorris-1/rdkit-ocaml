@@ -13,6 +13,7 @@ pkgs.mkShell {
     ocamlPackages.ctypes-foreign
     ocamlPackages.findlib
     ocamlPackages.merlin
+    ocamlPackages.ounit2
 
 
 

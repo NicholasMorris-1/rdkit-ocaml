@@ -83,7 +83,7 @@ let get_rxn =
     (string @-> sz_ptr @-> string @-> returning pkl_typ)
 
 
-(*Pickle serialization and string representations*)
+(*Pickle serialisation and string representations*)
 
 
 (** Returns a V2000 molblock string.  Caller must [free_ptr] the result. *)

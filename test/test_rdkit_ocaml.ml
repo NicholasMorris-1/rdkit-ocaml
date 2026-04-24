@@ -16,7 +16,7 @@ let test_version _ =
 
 (*This largely tests nothing, just ensures it doesn't crash because I am not sure how to test this from the ocaml side*)
 let test_free_ptr _ =
-  let pkl_size_ptr = allocate size_t (Unsigned.Size_t.of_int 0) in
+  let pkl_size_ptr = alloc_size_t () in
   let pkl = get_mol "c1cc(O)ccc1" pkl_size_ptr "" in
   free_ptr pkl
 
@@ -30,9 +30,9 @@ let house_keeping_tests = "Housekeeping tests" >::: [
 (*Molecules tests*)
 
 let test_get_mol_phenol _ =
-  let pkl_size_ptr = allocate size_t (Unsigned.Size_t.of_int 0) in
+  let pkl_size_ptr = alloc_size_t () in
   let pkl = get_mol "c1cc(O)ccc1" pkl_size_ptr "" in
-  let pkl_size = !@ pkl_size_ptr in
+  let pkl_size = read_size_t pkl_size_ptr in
   assert_bool "pkl size should be greater than 0" (Unsigned.Size_t.to_int pkl_size > 0);
   (*Convert back to SMILES and check it's a valid phenol *)
   let smiles = get_smiles pkl pkl_size None in
@@ -42,7 +42,7 @@ let test_get_mol_phenol _ =
   free_ptr pkl
 
 let test_get_mol_carboxylic_acid _ =
-  let pkl_size_ptr = allocate size_t (Unsigned.Size_t.of_int 0) in
+  let pkl_size_ptr = alloc_size_t () in
   let pkl = get_mol "CC(=O)O" pkl_size_ptr "" in
   let pkl_size = !@ pkl_size_ptr in
   assert_bool "pkl size should be greater than 0" (Unsigned.Size_t.to_int pkl_size > 0);
@@ -54,7 +54,7 @@ let test_get_mol_carboxylic_acid _ =
   free_ptr pkl
 
 let test_get_mol_lysine _ =
-  let pkl_size_ptr = allocate size_t (Unsigned.Size_t.of_int 0) in
+  let pkl_size_ptr = alloc_size_t () in
   let pkl = get_mol "NCCCC[C@H](N)C(=O)O" pkl_size_ptr "" in
   let pkl_size = !@ pkl_size_ptr in
   assert_bool "pkl size should be greater than 0" (Unsigned.Size_t.to_int pkl_size > 0);
@@ -66,7 +66,7 @@ let test_get_mol_lysine _ =
   free_ptr pkl
 
 let test_get_qmol_phenol _ =
-  let pkl_size_ptr = allocate size_t (Unsigned.Size_t.of_int 0) in
+  let pkl_size_ptr = alloc_size_t () in
   let pkl = get_qmol "c1cc(O)ccc1" pkl_size_ptr "" in
   let pkl_size = !@ pkl_size_ptr in
   assert_bool "pkl size should be greater than 0" (Unsigned.Size_t.to_int pkl_size > 0);
@@ -79,11 +79,11 @@ let test_get_qmol_phenol _ =
 
 let test_get_qmol_matches_substructure _ =
   (* build the target molecule *)
-  let mol_size_ptr = allocate size_t (Unsigned.Size_t.of_int 0) in
+  let mol_size_ptr = alloc_size_t () in
   let mol = get_mol "CC(=O)O" mol_size_ptr "" in
   let mol_size = !@ mol_size_ptr in
   (* build the query — carboxyl group *)
-  let qmol_size_ptr = allocate size_t (Unsigned.Size_t.of_int 0) in
+  let qmol_size_ptr = alloc_size_t () in
   let qmol = get_qmol "C(=O)O" qmol_size_ptr "" in
   let qmol_size = !@ qmol_size_ptr in
   (* check it matches *)
@@ -94,10 +94,10 @@ let test_get_qmol_matches_substructure _ =
   free_ptr qmol
 
 let test_get_substruct_no_match _ =
-  let mol_size_ptr = allocate size_t (Unsigned.Size_t.of_int 0) in
+  let mol_size_ptr = alloc_size_t () in
   let mol = get_mol "CC(=O)O" mol_size_ptr "" in
   let mol_size = !@ mol_size_ptr in
-  let qmol_size_ptr = allocate size_t (Unsigned.Size_t.of_int 0) in
+  let qmol_size_ptr = alloc_size_t () in
   let qmol = get_qmol "c1ccccc1" qmol_size_ptr "" in  (* benzene won't match *)
   let qmol_size = !@ qmol_size_ptr in
   let match_str = get_substruct_match mol mol_size qmol qmol_size None in
@@ -105,6 +105,8 @@ let test_get_substruct_no_match _ =
   free_ptr mol;
   free_ptr qmol
 
+
+(*TODO: write tests for get_RXN*)
 
 
 let molecule_tests = "Molecule tests" >::: [
@@ -116,10 +118,26 @@ let molecule_tests = "Molecule tests" >::: [
     "test_get_substruct_no_match" >:: test_get_substruct_no_match
 ]
 
+(*Pickle Serialisation tests*)
+
+let test_getmolblock _  =
+    let pkl_size_ptr = alloc_size_t () in
+    let pkl = get_mol "c1cc(O)ccc1" pkl_size_ptr "" in
+    let pkl_size = !@ pkl_size_ptr in
+    assert_bool "pkl size should be greater than 0" (Unsigned.Size_t.to_int pkl_size > 0);
+    let molblock = get_molblock pkl pkl_size None in
+    assert_bool "molblock should be non-empty" (String.length molblock > 0);
+    free_ptr pkl
+
+let pickle_serialisation_tests = "Pickle Serialisation tests" >::: [
+  "test_getmolblock" >:: test_getmolblock
+]
+
 
 let tests = "RDKit OCaml tests" >::: [
   house_keeping_tests;
-  molecule_tests
+  molecule_tests;
+  pickle_serialisation_tests
 ]
 
 let ()  =

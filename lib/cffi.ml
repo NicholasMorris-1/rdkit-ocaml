@@ -286,9 +286,7 @@ let get_avalon_fp_as_bytes =
          (pkl_typ @-> size_t @-> sz_ptr @-> json_opt @-> returning pkl_typ))
   with _ -> None
 
-(* ───────────────────────────────────────────────
-   Modification  (in-place:  char **pkl, size_t *pkl_sz)
-   ─────────────────────────────────────────────── *)
+(*Modifications*)
 
 (** All modification functions mutate the pickle buffer in place and return
     a [short] success flag (1 = ok, 0 = error).

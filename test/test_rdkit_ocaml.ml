@@ -120,7 +120,7 @@ let molecule_tests = "Molecule tests" >::: [
 
 (*Pickle Serialisation tests*)
 
-let test_getmolblock _  =
+let test_getmolblock _ =
     let pkl_size_ptr = alloc_size_t () in
     let pkl = get_mol "c1cc(O)ccc1" pkl_size_ptr "" in
     let pkl_size = !@ pkl_size_ptr in

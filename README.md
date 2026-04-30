@@ -37,8 +37,8 @@ If you really do not want to use Nix, you can resolve the dependencies manually 
 
 ### Running examples 
 
-Once you have built the exectuables, you can try out the examples by running 
+Once you have built the executables you can try out the examples by running 
 
 ``` shell
-dune exec examples/<example>.ml
+dune exec examples/<example>.exe
 ```

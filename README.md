@@ -34,3 +34,11 @@ If you really do not want to use Nix, you can resolve the dependencies manually 
  cd lib/
  dune exec rdkit-ocaml
 ```
+
+### Running examples 
+
+Once you have built the exectuables, you can try out the examples by running 
+
+``` shell
+dune exec examples/<example>.ml
+```

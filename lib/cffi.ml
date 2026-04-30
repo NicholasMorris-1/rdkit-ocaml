@@ -1,7 +1,6 @@
 open Ctypes
 open Foreign
 
-
 (*Link the .so file, if the build was successful this relative path should point correctly *)
 (* to the file *)
 
@@ -39,6 +38,9 @@ let short_t = short
 
 let c_free =
   foreign ~from:libc "free" (ptr void @-> returning void)
+
+let strlen =
+  foreign ~from:libc "strlen" (ptr char @-> returning size_t)
 
 
 (*Logging and housekeeping*)
@@ -201,12 +203,17 @@ let get_substruct_matches =
 (** Returns an SVG string for a molecule. *)
 let get_svg =
   foreign ~from:rdkit "get_svg"
-    (pkl_typ @-> size_t @-> json_opt @-> returning string)
+    (pkl_typ @-> size_t @-> string @-> returning string)
 
 (** Returns an SVG string for a reaction. *)
 let get_rxn_svg =
   foreign ~from:rdkit "get_rxn_svg"
     (pkl_typ @-> size_t @-> json_opt @-> returning string)
+
+(* In cffi.ml — change get_svg to return pkl_typ so we can free it *)
+let get_svg_raw =
+  foreign ~from:rdkit "get_svg"
+    (pkl_typ @-> size_t @-> string @-> returning pkl_typ)
 
 (*Descriptors*)
 

@@ -1,0 +1,4 @@
+; examples/dune
+(executables
+ (names reading_molecules  drawing_molecules)
+ (libraries rdkit_ocaml ctypes ctypes-foreign))

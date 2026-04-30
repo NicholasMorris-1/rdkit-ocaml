@@ -9,11 +9,14 @@ pkgs.mkShell {
     pkg-config
     ocaml
     dune
+    librsvg
     ocamlPackages.ctypes
     ocamlPackages.ctypes-foreign
     ocamlPackages.findlib
     ocamlPackages.merlin
     ocamlPackages.ounit2
+    ocamlPackages.vg
+    ocamlPackages.cairo2
 
 
 

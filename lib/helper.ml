@@ -5,6 +5,16 @@ open Vg
 open Cairo
 
 
+(*Define an ADT for molecules with their name and smiles String.*)
+
+
+type molecule = {
+    name : string;
+    smiles: string
+  }
+
+
+
 (*Helper functions*)
 
 
@@ -101,6 +111,8 @@ let smiles_to_output_png smiles filename output_dir =
   svg_to_png_in_dir svg png_filename output_dir
 
 
+
+
 let sub_structure_search mol_smiles query_smiles =
   let mol_pkl_size_ptr = allocate size_t (Unsigned.Size_t.of_int 0) in
   let mol_pkl = get_mol mol_smiles mol_pkl_size_ptr "" in
@@ -112,3 +124,9 @@ let sub_structure_search mol_smiles query_smiles =
   free_ptr mol_pkl;
   free_ptr query_pkl;
   matches_json
+
+let query_smiles mol query =
+  let matches = sub_structure_search mol.smiles query in
+  match matches with
+  | "{}" -> false
+  | _ -> true

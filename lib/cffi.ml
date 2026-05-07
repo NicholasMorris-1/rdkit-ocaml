@@ -25,7 +25,7 @@ let pkl_typ : pkl typ = ptr char
 
 (*Many functions take in JSONs as arguments*)
 
-let json_opt = ptr_opt char
+let json_opt = string_opt
 
 (** Modification functions take [char **pkl, size_t *pkl_sz] — the pickle
     is reallocated in place.  We model these as [ptr pkl_typ] and

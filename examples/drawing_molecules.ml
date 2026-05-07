@@ -3,7 +3,6 @@ open Helper
 
 (*Define an ADT for molecules with their name and smiles String.*)
 
-
 type molecule = {
     name : string;
     smiles: string

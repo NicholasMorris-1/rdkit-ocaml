@@ -17,6 +17,7 @@ pkgs.mkShell {
     ocamlPackages.ounit2
     ocamlPackages.vg
     ocamlPackages.cairo2
+    ocamlPackages.yojson
 
 
 

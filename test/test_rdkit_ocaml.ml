@@ -1,6 +1,7 @@
 open OUnit2
 open Ctypes
 open Rdkit_ocaml.Cffi
+open Rdkit_ocaml.Helper
 
 let short i = i
 let int_of_short i = i
@@ -402,6 +403,17 @@ let test_properties _ =
 
 let property_tests = "properties" >::: [ "set_get_list_clear_keep" >:: test_properties ]
 
+let test_get_ocaml_mol_from_smiles _ =
+  let mol = get_ocaml_mol_from_smiles "CCO" in
+  assert_equal 3 (Array.length mol.atoms);
+  assert_equal 2 (Array.length mol.bonds);
+  assert_equal 6 mol.atoms.(0).atomic_num;
+  assert_equal 8 mol.atoms.(2).atomic_num;
+  assert_equal 1 mol.bonds.(0).a1;
+  assert_equal 0 mol.bonds.(0).a2;
+  assert_equal "SINGLE" (match mol.bonds.(0).bond_type with Single -> "SINGLE" | _ -> "OTHER")
+
+
 let test_helpers _ =
   let szp = alloc_size_t () in
   assert_equal 0 (int_of_size_t (read_size_t szp));
@@ -414,7 +426,9 @@ let test_helpers _ =
   assert_bool "with_inplace should return a non-null pickle" (not (is_null new_pkl));
   free_ptr new_pkl
 
-let helper_tests = "helpers" >::: [ "alloc_read_with_inplace" >:: test_helpers ]
+let helper_tests = "helpers" >::: [ "alloc_read_with_inplace" >:: test_helpers  ]
+
+let ocaml_mol_tests = "OCaml molecule representation" >::: [ "get_ocaml_mol_from_smiles" >:: test_get_ocaml_mol_from_smiles ]
 
 let tests =
   "RDKit OCaml CFFI tests" >::: [
@@ -432,6 +446,7 @@ let tests =
     logging_tests;
     property_tests;
     helper_tests;
+    ocaml_mol_tests;
   ]
 
 let () = run_test_tt_main tests

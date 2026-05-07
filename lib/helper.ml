@@ -3,6 +3,8 @@ open Foreign
 open Cffi
 open Vg
 open Cairo
+open Types
+open Json_parser
 
 
 (*Define an ADT for molecules with their name and smiles String.*)
@@ -130,3 +132,13 @@ let query_smiles mol query =
   match matches with
   | "{}" -> false
   | _ -> true
+
+
+let get_ocaml_mol_from_smiles smiles =
+  let mol_pkl_size_ptr = allocate size_t (Unsigned.Size_t.of_int 0) in
+  let mol_pkl = get_mol smiles mol_pkl_size_ptr "" in
+  let mol_pkl_size = !@ mol_pkl_size_ptr in
+  let mol_json = get_json mol_pkl mol_pkl_size None in
+  let mol = parse_rdkit_mol_json (Yojson.Basic.from_string mol_json) in
+  free_ptr mol_pkl;
+  mol
